@@ -22,7 +22,7 @@ public class Main {
                 int opcion;
                 System.out.println("""
                         1)Auto
-                        2)Vehiculo
+                        2)Motocicleta
                         Digite su opcion:
                         
                         """);
@@ -84,24 +84,21 @@ public class Main {
                             if(u instanceof Autos){
                                 System.out.println(u);
                             }
+                            System.out.println("Precio Final: "+ u.calcularPrecioFinal());
 
                         }
-                        System.out.println("--------");
-                        for(int i=0;i<lstVehiculo.size();i++){
-                            lstVehiculo.get(i).calcularPrecioFinal();
 
-                        }
+
                     }
                     case 2 ->{
                         for(Vehiculo u : lstVehiculo){
                             if(u instanceof Motocicletas){
                                 System.out.println(u);
                             }
-                        }
-                        for(int i=0;i<lstVehiculo.size();i++){
-                            lstVehiculo.get(i).calcularPrecioFinal();
+                            System.out.println("------Precio Final------"+u.calcularPrecioFinal());
 
                         }
+
                     }
 
 

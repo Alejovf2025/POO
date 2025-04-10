@@ -46,10 +46,8 @@ public class Vehiculo {
         this.precioBase = precioBase;
     }
 
-    public void calcularPrecioFinal(){
-        double precioFinal;
-        precioFinal = (precioBase * 0.1)+precioBase;
-        System.out.println("Precio final: "+ precioFinal);
+    public double calcularPrecioFinal(){
+        return precioBase+= precioBase* 0.1;
 
 
     }
