@@ -47,7 +47,9 @@ public class Vehiculo {
     }
 
     public double calcularPrecioFinal(){
-        return precioBase+= precioBase* 0.1;
+        double precioFinal;
+        precioFinal = (precioBase*0.1)+precioBase;
+        return precioFinal;
 
 
     }

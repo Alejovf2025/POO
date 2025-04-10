@@ -83,19 +83,21 @@ public class Main {
                         for(Vehiculo u : lstVehiculo){
                             if(u instanceof Autos){
                                 System.out.println(u);
+                                System.out.println("Precio Final: "+ u.calcularPrecioFinal());
                             }
-                            System.out.println("Precio Final: "+ u.calcularPrecioFinal());
+
 
                         }
 
 
                     }
                     case 2 ->{
-                        for(Vehiculo u : lstVehiculo){
-                            if(u instanceof Motocicletas){
-                                System.out.println(u);
+                        for(Vehiculo e : lstVehiculo){
+                            if(e instanceof Motocicletas){
+                                System.out.println(e);
+                                System.out.println("Precio Final: "+e.calcularPrecioFinal());
                             }
-                            System.out.println("------Precio Final------"+u.calcularPrecioFinal());
+
 
                         }
 
